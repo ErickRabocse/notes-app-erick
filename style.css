@@ -1,8 +1,104 @@
+/* RESETS */
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+/* STYLES */
+:root {
+  --dark-blue: #011936;
+  --light-blue: #63ccca;
+  --light-violet: #7c72a0;
+  --soft-white: #e5e1ee;
+}
+/* GENERAL */
+html {
+  font-size: 10px;
   font-family: "Ysabeau", sans-serif;
+}
+body {
+  background-color: var(--soft-white);
+}
+p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+/* FORM SECTION */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header h1 {
+  font-size: 3.5rem;
+  color: var(--light-violet);
+  line-height: 2;
+}
+header form {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+form > * {
+  margin-bottom: 5px;
+  outline: none;
+  font-size: 1.4rem;
+  padding: 7px;
+  border: 1px solid var(--light-violet);
+  border-radius: 3px;
+}
+
+form textarea {
+  padding: 7px 5px 40px 5px;
+  font-family: inherit;
+}
+
+::placeholder {
+  font-size: 1.3rem;
+}
+
+form button {
+  background-color: var(--light-violet);
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  background-color: var(--dark-blue);
+}
+
+/* DISPLAY AREA */
+.notes {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.note-counter,
+.note-text {
+  font-size: 1.4rem;
+}
+
+.note-title {
+  font-size: 1.6rem;
+}
+
+.note-btn {
+  padding: 7px;
+  margin-top: 5px;
+  background-color: var(--dark-blue);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: var(--light-violet);
 }
