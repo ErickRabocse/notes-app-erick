@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,200;0,400;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/05e72eaf81.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Quick Notes</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <!-- HEADER SECTION: INPUT AREA-->
+      <header>
+        <div class="header_container">
+          <h1>My notes</h1>
+          <form action="">
+            <input type="text" name="" id="note-title" placeholder="Title" />
+            <textarea
+              name=""
+              id="note-text"
+              cols="30"
+              rows="3"
+              placeholder="Content"
+            ></textarea>
+            <button id="add-btn">New</button>
+          </form>
+        </div>
+      </header>
+      <!-- DISPLAY SECTION: NOTES ARE SHOWN HERE -->
+      <section>
+        <div class="display_container">
+          <h2>Your notes</h2>
+          <hr />
+          <div id="notes">
+            <div id="note">
+              <p class="note-counter">Note 1</p>
+              <h3 class="note-title">Hello</h3>
+              <p class="note-text">Message</p>
+              <button class="note-btn">Delete</button>
+              <button class="note-btn edit-btn">Edit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
