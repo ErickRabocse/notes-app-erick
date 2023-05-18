@@ -18,41 +18,36 @@
     <title>Quick Notes</title>
   </head>
   <body>
-    <div class="main_container">
+    <div class="main_container container">
       <!-- HEADER SECTION: INPUT AREA-->
       <header>
-        <div class="header_container container">
+        <div class="header_container">
           <h1>My notes</h1>
           <form action="">
-            <input type="text" name="" id="note-title" placeholder="Title" />
-            <textarea
-              name=""
-              id="note-text"
-              cols="30"
-              rows="3"
-              placeholder="Content"
-            ></textarea>
+            <input type="text" id="note-title" placeholder="Title" />
+            <textarea id="note-text" placeholder="Content"></textarea>
             <button id="add-btn">New</button>
           </form>
         </div>
       </header>
       <!-- DISPLAY SECTION: NOTES ARE SHOWN HERE -->
       <section>
-        <div class="display_container container">
+        <div class="display_container">
           <h2>Your notes</h2>
           <hr />
           <div id="notes" class="notes">
-            <div id="note">
+            <!-- <div id="note">
               <p class="note-counter">Note 1</p>
               <h3 class="note-title">Hello</h3>
               <p class="note-text">Message</p>
               <button class="note-btn">Delete</button>
               <button class="note-btn edit-btn">Edit</button>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
     </div>
+    <!-- <script src="./script.js"></script> -->
     <script src="./main.js"></script>
   </body>
 </html>
